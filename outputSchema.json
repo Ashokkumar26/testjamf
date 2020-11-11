@@ -1,0 +1,90 @@
+{
+  "output": {
+    "properties": {
+      "id": {
+        "examples": [1],
+        "type": "number",
+        "title": "Id",
+        "$id": "/properties/id"
+      },
+      "name": {
+        "examples": ["ashok"],
+        "type": "string",
+        "title": "Name",
+        "$id": "/properties/name"
+      },
+      "is_smart": {
+        "examples": [true],
+        "type": "boolean",
+        "title": "Is smart",
+        "$id": "/properties/is_smart"
+      },
+      "is_notify_on_change": {
+        "examples": [true],
+        "type": "boolean",
+        "title": "Is notify on change",
+        "$id": "/properties/is_notify_on_change"
+      },
+      "site": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "examples": [1],
+            "type": "number",
+            "title": "Id",
+            "$id": "/properties/site/id"
+          },
+          "name": {
+            "examples": ["ashok"],
+            "type": "string",
+            "title": "Name",
+            "$id": "/properties/site/name"
+          }
+        },
+        "title": "site"
+      },
+      "users": {
+        "type": "collection",
+        "title": "users",
+        "$id": "/properties/users",
+        "item": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "examples": [1],
+              "type": "number",
+              "title": "Id",
+              "$id": "/properties/id"
+            },
+            "username": {
+              "examples": ["ashok"],
+              "type": "string",
+              "title": "Username",
+              "$id": "/properties/username"
+            },
+            "full_name": {
+              "examples": ["ashok"],
+              "type": "string",
+              "title": "Full name",
+              "$id": "/properties/full_name"
+            },
+            "phone_number": {
+              "examples": [1],
+              "type": "number",
+              "title": "Phone number",
+              "$id": "/properties/phone_number"
+            },
+            "email_address": {
+              "examples": ["johnsmith@company.com"],
+              "type": "string",
+              "title": "Email address",
+              "$id": "/properties/email_address"
+            }
+          }
+        }
+      }
+    },
+    "type": "object",
+    "title": "hello"
+  }
+}
